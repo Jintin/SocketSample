@@ -1,11 +1,11 @@
-package com.example.bottomnavigationsample
+package com.example.socketsample
 
 import android.os.Bundle
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.bottomnavigationsample.databinding.ActivityMainBinding
+import com.example.socketsample.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.jintin.bindingextension.BindingActivity
 import dagger.hilt.android.AndroidEntryPoint

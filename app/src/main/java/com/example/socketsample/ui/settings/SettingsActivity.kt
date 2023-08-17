@@ -1,7 +1,7 @@
-package com.example.bottomnavigationsample.ui.settings
+package com.example.socketsample.ui.settings
 
 import android.os.Bundle
-import com.example.bottomnavigationsample.databinding.WordBinding
+import com.example.socketsample.databinding.WordBinding
 import com.jintin.bindingextension.BindingActivity
 
 class SettingsActivity : BindingActivity<WordBinding>() {

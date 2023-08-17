@@ -1,4 +1,4 @@
-package com.example.bottomnavigationsample
+package com.example.socketsample
 
 import org.junit.Test
 

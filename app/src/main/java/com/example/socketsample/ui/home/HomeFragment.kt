@@ -1,15 +1,15 @@
-package com.example.bottomnavigationsample.ui.home
+package com.example.socketsample.ui.home
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.carousell.monoadapter.MonoAdapter
-import com.example.bottomnavigationsample.R
-import com.example.bottomnavigationsample.data.MarketPriceDiffChecker
-import com.example.bottomnavigationsample.databinding.AdapterMarketBinding
-import com.example.bottomnavigationsample.databinding.FragmentHomeBinding
-import com.example.bottomnavigationsample.extension.repeatOnStart
+import com.example.socketsample.R
+import com.example.socketsample.data.MarketPriceDiffChecker
+import com.example.socketsample.databinding.AdapterMarketBinding
+import com.example.socketsample.databinding.FragmentHomeBinding
+import com.example.socketsample.extension.repeatOnStart
 import com.jintin.bindingextension.BindingFragment
 import dagger.hilt.android.AndroidEntryPoint
 

@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.bottomnavigationsample"
+    namespace = "com.example.socketsample"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.bottomnavigationsample"
+        applicationId = "com.example.socketsample"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

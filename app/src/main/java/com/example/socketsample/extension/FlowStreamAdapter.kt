@@ -1,4 +1,4 @@
-package com.example.bottomnavigationsample.extension
+package com.example.socketsample.extension
 
 import com.tinder.scarlet.Stream
 import com.tinder.scarlet.StreamAdapter

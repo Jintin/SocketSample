@@ -1,4 +1,4 @@
-package com.example.bottomnavigationsample.ui.settings
+package com.example.socketsample.ui.settings
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,8 +6,8 @@ import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
-import com.example.bottomnavigationsample.R
-import com.example.bottomnavigationsample.databinding.WordBinding
+import com.example.socketsample.R
+import com.example.socketsample.databinding.WordBinding
 import com.jintin.bindingextension.BindingFragment
 
 class SettingsFragment : BindingFragment<WordBinding>() {

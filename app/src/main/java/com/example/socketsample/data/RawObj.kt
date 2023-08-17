@@ -1,4 +1,4 @@
-package com.example.bottomnavigationsample.data
+package com.example.socketsample.data
 
 import androidx.annotation.Keep
 

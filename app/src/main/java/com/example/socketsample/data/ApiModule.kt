@@ -1,6 +1,6 @@
-package com.example.bottomnavigationsample.data
+package com.example.socketsample.data
 
-import com.example.bottomnavigationsample.extension.FlowStreamAdapter
+import com.example.socketsample.extension.FlowStreamAdapter
 import com.tinder.scarlet.Scarlet
 import com.tinder.scarlet.messageadapter.gson.GsonMessageAdapter
 import com.tinder.scarlet.websocket.okhttp.newWebSocketFactory

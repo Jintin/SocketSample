@@ -1,4 +1,4 @@
-package com.example.bottomnavigationsample
+package com.example.socketsample
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

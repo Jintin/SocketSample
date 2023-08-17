@@ -1,4 +1,4 @@
-package com.example.bottomnavigationsample.data
+package com.example.socketsample.data
 
 import com.tinder.scarlet.ws.Receive
 import com.tinder.scarlet.ws.Send

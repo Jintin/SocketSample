@@ -14,6 +14,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "BottomNavigationSample"
+rootProject.name = "SocketSample"
 include(":app")
  

@@ -1,4 +1,4 @@
-package com.example.bottomnavigationsample.extension
+package com.example.socketsample.extension
 
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner

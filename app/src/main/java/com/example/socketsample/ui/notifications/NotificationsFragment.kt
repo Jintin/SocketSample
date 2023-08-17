@@ -1,13 +1,14 @@
-package com.example.bottomnavigationsample.ui.dashboard
+package com.example.socketsample.ui.notifications
 
 import android.os.Bundle
 import android.view.View
-import com.example.bottomnavigationsample.databinding.WordBinding
+import com.example.socketsample.databinding.WordBinding
 import com.jintin.bindingextension.BindingFragment
 
-class DashboardFragment : BindingFragment<WordBinding>() {
+class NotificationsFragment : BindingFragment<WordBinding>() {
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.word.text = "B"
+        binding.word.text = "C"
     }
 }
