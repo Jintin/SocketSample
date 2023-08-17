@@ -2,8 +2,8 @@ package com.example.bottomnavigationsample.ui.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.bottomnavigationsample.data.PriceRepository
 import com.example.bottomnavigationsample.data.MarketPrice
+import com.example.bottomnavigationsample.data.PriceRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
