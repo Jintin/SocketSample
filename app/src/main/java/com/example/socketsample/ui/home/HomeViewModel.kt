@@ -8,6 +8,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.emitAll
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -17,12 +18,18 @@ class HomeViewModel @Inject constructor(
 ) : ViewModel() {
     private val _futureFlow = MutableStateFlow(false)
     val futureFlow: Flow<Boolean> = _futureFlow
-    suspend fun priceFlow(): Flow<List<MarketPrice>> {
-        val info = repository.getMarketInfo().sortedBy { it.symbol }
-        return combine(futureFlow, repository.startCollect(info)) { future, list ->
-            list.filter {
-                !future || it.future
-            }
+
+    private val _priceFlow = MutableStateFlow<List<MarketPrice>>(emptyList())
+    val priceFlow: Flow<List<MarketPrice>> = _priceFlow
+
+    init {
+        viewModelScope.launch {
+            val info = repository.getMarketInfo()
+            _priceFlow.emitAll(combine(futureFlow, repository.startCollect(info)) { future, list ->
+                list.filter {
+                    !future || it.future
+                }
+            })
         }
     }
 

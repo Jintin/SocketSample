@@ -30,7 +30,7 @@ class PriceRepository @Inject constructor(
     }
 
     suspend fun getMarketInfo(): List<MarketInfo> {
-        return apiService.getMarketInfo().data
+        return apiService.getMarketInfo().data.sortedBy { it.symbol }
     }
 
 }

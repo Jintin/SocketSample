@@ -2,6 +2,7 @@ package com.example.socketsample.ui.home
 
 import android.os.Bundle
 import android.view.View
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.carousell.monoadapter.MonoAdapter
@@ -16,7 +17,7 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class HomeFragment : BindingFragment<FragmentHomeBinding>() {
 
-    private val viewModel by viewModels<HomeViewModel>()
+    private val viewModel by activityViewModels<HomeViewModel>()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -25,7 +26,7 @@ class HomeFragment : BindingFragment<FragmentHomeBinding>() {
             price.text = it.price.toString()
         }
         repeatOnStart {
-            viewModel.priceFlow().collect(marketAdapter::submitList)
+            viewModel.priceFlow.collect(marketAdapter::submitList)
         }
         with(binding.recyclerView) {
             adapter = marketAdapter
